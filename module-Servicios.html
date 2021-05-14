@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Module: Servicios | Api Chazki</title>
+    <title>Module: Servicios | Api Chazki Develop</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -24,7 +24,7 @@
         
     </div>
     <div class="title">
-        <h1><a href="index.html" class="link">Api Chazki</a></h1>
+        <h1><a href="index.html" class="link">Api Chazki Develop</a></h1>
         
     </div>
     <div class="search-container" id="search-container">
@@ -175,7 +175,7 @@
     <div class="description">
         <script type="text/javascript" src="https://unpkg.com/mermaid@7.1.0/dist/mermaid.min.js"></script><p>Este endpoint permite registrar un delivery. Dado que en el los datos se puegen agrupar en un arreglo, se pueden registrar varios deliveries</p>
 <p>Los datos deben de ser enviados en el protocolo POST y en formato del body request en JSON.</p>
-<p>URL: https://us-central1-chazki-link.cloudfunctions.net/uploadClientOrders</p>
+<p>URL: https://us-central1-chazki-link-dev.cloudfunctions.net/uploadClientOrders</p>
 <p>Nota: La estructura de los objetos del array &quot;orders&quot; es igual a la proporcionada en el esquema para la carga CSV. Puede que el siguiente listado de parametros tenga mas o menos campos. En todo caso, utilize los campos del esquema CSV.</p>
     </div>
     
@@ -1278,7 +1278,7 @@
     <div class="description">
         <script type="text/javascript" src="https://unpkg.com/mermaid@7.1.0/dist/mermaid.min.js"></script><p>Esta API nos permite ver el movimiento del Chazki y el estado en que se encuentra el delivery.</p>
 <p>Los datos deben de ser enviados en el protocolo GET.</p>
-<p>URL: https://us-central1-chazki-link.cloudfunctions.net/fnTrackOrderChazkiPosition</p>
+<p>URL: https://us-central1-chazki-link-dev.cloudfunctions.net/fnTrackOrderChazkiPosition</p>
     </div>
     
 
@@ -1417,7 +1417,7 @@
         
         <p class="code-caption">Envio de datos en formato cURL</p>
     
-    <pre class="prettyprint"><code>  curl --request GET 'https://us-central1-chazki-link.cloudfunctions.net/fnTrackOrderChazkiPosition?code=XXXXXXXXX&amp;enterpriseKey=YYYYYYYYYYYYYYY'</code></pre>
+    <pre class="prettyprint"><code>  curl --request GET 'https://us-central1-chazki-link-dev.cloudfunctions.net/fnTrackOrderChazkiPosition?code=XXXXXXXXX&amp;enterpriseKey=YYYYYYYYYYYYYYY'</code></pre>
 
         <p class="code-caption">Respuesta de la consulta</p>
     
@@ -1465,7 +1465,7 @@
     <div class="description">
         <script type="text/javascript" src="https://unpkg.com/mermaid@7.1.0/dist/mermaid.min.js"></script><p>Esta API nos permite ver los estados por los que paso el delivery agrupados por servicios. La agrupación de servicios hace referencia a los intentos que se realizó para la entrega del delivery.</p>
 <p>Los datos deben de ser enviados en el protocolo GET.</p>
-<p>URL: https://us-central1-chazki-link.cloudfunctions.net/fnOrderHistorialPublic</p>
+<p>URL: https://us-central1-chazki-link-dev.cloudfunctions.net/fnOrderHistorialPublic</p>
     </div>
     
 
@@ -1604,7 +1604,7 @@
         
         <p class="code-caption">Envio de datos en formato cURL</p>
     
-    <pre class="prettyprint"><code>  curl --location --request GET 'https://us-central1-chazki-link.cloudfunctions.net/fnOrderHistorialPublic?code=XXXXXXXXXXXXXXXX&amp;enterpriseKey=YYYYYYYYYYYYYYYYYYYYY'</code></pre>
+    <pre class="prettyprint"><code>  curl --location --request GET 'https://us-central1-chazki-link-dev.cloudfunctions.net/fnOrderHistorialPublic?code=XXXXXXXXXXXXXXXX&amp;enterpriseKey=YYYYYYYYYYYYYYYYYYYYY'</code></pre>
 
         <p class="code-caption">Respuesta de la consulta</p>
     
@@ -1661,7 +1661,7 @@
     <div class="description">
         <script type="text/javascript" src="https://unpkg.com/mermaid@7.1.0/dist/mermaid.min.js"></script><p>Esta API nos permite ver todos los estados por los que pasó el delivery . Se muestra en cada cambio de estado el numero de intento que se realizó para la entrega del delivery.</p>
 <p>Los datos deben de ser enviados en el protocolo GET.</p>
-<p>URL: https://us-central1-chazki-link.cloudfunctions.net/fnOrderHistorialPrivate</p>
+<p>URL: https://us-central1-chazki-link-dev.cloudfunctions.net/fnOrderHistorialPrivate</p>
     </div>
     
 
@@ -1800,7 +1800,7 @@
         
         <p class="code-caption">Envio de datos en formato cURL</p>
     
-    <pre class="prettyprint"><code>  curl --request GET 'https://us-central1-chazki-link.cloudfunctions.net/fnOrderHistorialPrivate?code=XXXXXXXXXXXXXXXX&amp;enterpriseKey=YYYYYYYYYYYYYYYYYYYYY'</code></pre>
+    <pre class="prettyprint"><code>  curl --request GET 'https://us-central1-chazki-link-dev.cloudfunctions.net/fnOrderHistorialPrivate?code=XXXXXXXXXXXXXXXX&amp;enterpriseKey=YYYYYYYYYYYYYYYYYYYYY'</code></pre>
 
         <p class="code-caption">Respuesta de la consulta</p>
     
@@ -2023,7 +2023,7 @@
         
         <p class="code-caption">Envio de datos en formato cURL</p>
     
-    <pre class="prettyprint"><code>  curl --request GET 'https://us-central1-chazki-link.cloudfunctions.net/fnOrderImages?code=XXXXXXXXXXXXXXXX&amp;enterpriseKey=YYYYYYYYYYYYYYYYYYYYY'</code></pre>
+    <pre class="prettyprint"><code>  curl --request GET 'https://us-central1-chazki-link-dev.cloudfunctions.net/fnOrderImages?code=XXXXXXXXXXXXXXXX&amp;enterpriseKey=YYYYYYYYYYYYYYYYYYYYY'</code></pre>
 
         <p class="code-caption">Respuesta de la consulta</p>
     
