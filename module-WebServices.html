@@ -1,0 +1,2550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Module: WebServices | Api Chazki Develop</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-jsdoc.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/tui-doc.css">
+
+    
+</head>
+<body>
+<nav class="lnb" id="lnb">
+    <div class="logo" style="width: 201px; height: 79px">
+        
+            <img src="https://docs.chazki.com/images/logo.png" width="100%" height="100%">
+        
+    </div>
+    <div class="title">
+        <h1><a href="index.html" class="link">Api Chazki Develop</a></h1>
+        
+    </div>
+    <div class="search-container" id="search-container">
+        <input type="text" placeholder="Search">
+        <ul></ul>
+    </div>
+    
+    <div class="lnb-api hidden"><h3>Modules</h3><ul><li><a href="module-Global.html">Global</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="module:Global_sub"><div class="member-type">Methods</div><ul class="inner"><li><a href="module-Global.html#~Status">Status</a></li></ul></div></li><li><a href="module-WebServices.html">WebServices</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="module:WebServices_sub"><div class="member-type">Members</div><ul class="inner"><li><a href="module-WebServices.html#.orderStatusUpdateFun">orderStatusUpdateFun</a></li></ul><div class="member-type">Methods</div><ul class="inner"><li><a href="module-WebServices.html#~uploadClientOrders">uploadClientOrders</a></li><li><a href="module-WebServices.html#~fnTrackOrderChazkiPosition">fnTrackOrderChazkiPosition</a></li><li><a href="module-WebServices.html#~fnOrderHistorialPublic">fnOrderHistorialPublic</a></li><li><a href="module-WebServices.html#~fnOrderHistorialPrivate">fnOrderHistorialPrivate</a></li><li><a href="module-WebServices.html#~fnOrderImages">fnOrderImages</a></li></ul></div></li><li><a href="module-PDFServices.html">PDFServices</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="module:PDFServices_sub"><div class="member-type">Methods</div><ul class="inner"><li><a href="module-PDFServices.html#~createPDFByOrders">createPDFByOrders</a></li></ul></div></li></ul></div>
+</nav>
+<div id="resizer"></div>
+
+<div class="main" id="main">
+    
+
+
+
+
+<section>
+
+<header>
+    
+        <h2>WebServices</h2>
+        
+            
+        
+    
+</header>
+
+<article>
+    
+        <div class="container-overview">
+        
+            
+                <div class="description"><script type="text/javascript" src="https://unpkg.com/mermaid@7.1.0/dist/mermaid.min.js"></script><p>List of endpoints for register and consult of the orders status.</p></div>
+            
+
+            
+                
+
+<dt>
+    
+</dt>
+<dd>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+</dd>
+
+            
+        
+        </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Members</h3>
+
+        <dl>
+            
+
+<dt>
+<h4 class="name" id=".orderStatusUpdateFun">
+    orderStatusUpdateFun<span class="type-signature"></span>
+    
+</h4>
+
+
+</dt>
+<dd>
+    
+    <div class="description">
+        <script type="text/javascript" src="https://unpkg.com/mermaid@7.1.0/dist/mermaid.min.js"></script><p>This endpoint allow to update an order status.</p>
+    </div>
+    
+
+    <!--
+    
+    -->
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+    
+</dd>
+
+        </dl>
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        <dl>
+                
+
+<dt>
+    
+        <h4 class="name" id="~uploadClientOrders">
+            
+                uploadClientOrders<span class="signature">(enterpriseKey, orders)</span><span class="type-signature"> &rarr; {Response}</span>
+                
+            
+        </h4>
+
+        
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <script type="text/javascript" src="https://unpkg.com/mermaid@7.1.0/dist/mermaid.min.js"></script><p>This endpoint allows to register a delivery. Since the data can be grouped into an array, multiple deliveries can be registered</p>
+<p>Data must be sent in POST protocol and in the body request format in JSON.</p>
+<p>URL: https://us-central1-chazki-link-dev.cloudfunctions.net/uploadClientOrders</p>
+<p>Note: The objects structure in the &quot;orders&quot; array is the same as the one provided in the schema for CSV loading. The following list of parameters may have more or fewer fields. In any case, use the fields from the CSV scheme.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-params">
+        <h5>Parameters:</h5>
+        
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>enterpriseKey</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Unique authorization code that identifies the customer.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>orders</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;Object></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Objects array containing the orders information required for the client.</p>
+                <h6>Properties</h6>
+                
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>trackCode</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>Order code.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>paymentMethodID</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>Order payment method, It can take the next values PAID, COD, CCOD.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>paymentProofID</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>Payment document, It can take the next values INVOICE, TICKET and GUIDE.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>serviceID</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>Service code. It can take the next values &quot;REGULAR&quot;, &quot;EXPRESS&quot; or &quot;PROGRAMMED&quot;, depending on the desired service type.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>packageEnvelope</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>Package wrap type.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>packageWeight</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Int</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>Package weight.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>packageSizeID</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>Order measure unit (XS, S, M, L).</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>packageQuantity</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>Order packages Quantity.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>productDescription</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>Products description.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>productPrice</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Float</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>Approximate product price.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>reverseLogistic</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>It can take the next values ​​&quot;YES&quot; or &quot;NO&quot;</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>crossdocking</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>Field indicating if the order is crossdocking. It can take the next values &quot;YES&quot; or &quot;NO&quot;.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>pickUpBranchID</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>Warehouse code where the packages are collected.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>pickUpAddress</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>Client address.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>pickUpPostalCode</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>Recolection address postal code.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>pickUpAddressReference</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>Client address references.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>pickUpPrimaryReference</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>Client address district.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>pickUpSecondaryReference</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>Client address province.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>pickUpNotes</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>Package recollection notes.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>pickUpContactName</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>Contact Names for the recollection.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>pickUpContactPhone</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>Contact phone number for the recollection.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>pickUpContactDocumentTypeID</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>Contact document type for the recollection. It can take the next values &quot;DNI&quot;, &quot;PAS&quot;, &quot;PTP&quot;, &quot;CR&quot; and &quot;CE&quot;.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>pickUpContactDocumentNumber</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>Contact ID for the recollection.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>pickUpContactEmail</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>Email for recollection notification.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>dropBranchID</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>Delivery warehouse code.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>dropAddress</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>Final client delivery address.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>dropPostalCode</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>Recollection address's postal code.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>dropAddressReference</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>Final client address's references.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>dropPrimaryReference</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>Final client address's district.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>dropSecondaryReference</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>Final client address's province.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>dropNotes</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>Package delivery notes.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>dropContactName</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>Person's contact names for delivery.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>dropContactPhone</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>Person's phone number for delivery</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>dropContactDocumentTypeID</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>Person's document type for delivery. It can take the next values &quot;DNI&quot;, &quot;PAS&quot;, &quot;PTP&quot;, &quot;CR&quot; and &quot;CE&quot;.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>dropContactDocumentNumber</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>Person's ID document for delivery.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>dropContactEmail</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>Delivery notification Email.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>pickUpPoint</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;Float></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>Coordinates array of picking address. Must have at least two elements: latitude and longitude.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>dropPoint</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;Float></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>Coordinates array of delivery address. Must have at least two elements: latitude and longitude.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Throws:</h5>
+    
+            
+
+    <div class="param-desc">
+    
+        <p>If the enterpriseKey or the tags correct name is not provided, the orders will not be created.</p>
+    
+    </div>
+
+
+        
+
+    
+    <div class="container-returns">
+        <h5>Returns:</h5>
+        
+                
+
+
+
+<span class="param-type">Response</span>
+
+
+
+
+
+- <p>Response object with the orders creation status.</p>
+
+
+
+
+            
+    </div>
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+        <h5>Examples</h5>
+        
+        <p class="code-caption">Parameters sent inside the request body in JSON format.</p>
+    
+    <pre class="prettyprint"><code> {
+   "enterpriseKey": "XXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+   "orders": [
+     {
+       "trackCode": "ABCDEFI",
+       "paymentMethodID": "PAGADO",
+       "paymentProofID": "BOLETA",
+       "serviceID": "REGULAR",
+       "packageEnvelope": "Caja",
+       "packageWeight": 1,
+       "packageSizeID": "XL",
+       "packageQuantity": 1,
+       "productDescription": "xxxxxxxxxxx",
+       "productPrice": 0,
+       "reverseLogistic": "NO",
+       "crossdocking": "NO",
+       "pickUpBranchID": "",
+       "pickUpAddress": "xxxxxxxxxxxxxxx",
+       "pickUpPostalCode": "000000",
+       "pickUpAddressReference": "-",
+       "pickUpPrimaryReference": "Distrito",
+       "pickUpSecondaryReference": "Departamento",
+       "pickUpNotes": "",
+       "pickUpContactName": "xxxxx yyyyy",
+       "pickUpContactPhone": "12345678",
+       "pickUpContactDocumentTypeID": "RUC",
+       "pickUpContactDocumentNumber": "12345678",
+       "pickUpContactEmail": "xxxxxx@yyyyy.zzz",
+       "dropBranchID": "",
+       "dropAddress": "Direccion",
+       "dropPostalCode": "000000",
+       "dropAddressReference": "Referencia",
+       "dropPrimaryReference": "Distrito",
+       "dropSecondaryReference": "Departamento",
+       "dropNotes": "Notas",
+       "dropContactName": "CONTACTO",
+       "dropContactPhone": "12345678 - 12345678",
+       "dropContactDocumentTypeID": "DNI",
+       "dropContactDocumentNumber": "12345678",
+       "dropContactEmail": "xxxxxx@yyyyy.zzz",
+       "pickUpPoint": [
+          -99.17644241,
+          19.509946148
+       ],
+       "dropPoint": [
+          -99.184241,
+          19.529196
+       ]
+     }
+   ]
+ }</code></pre>
+
+        <p class="code-caption">Response</p>
+    
+    <pre class="prettyprint"><code> {
+     "success": true,
+     "ordersWithErrors": 0,
+     "ordersWithoutErrors": 1
+ }</code></pre>
+
+    
+
+</dd>
+
+            
+                
+
+<dt>
+    
+        <h4 class="name" id="~fnTrackOrderChazkiPosition">
+            
+                fnTrackOrderChazkiPosition<span class="signature">(code, enterpriseKey)</span><span class="type-signature"></span>
+                
+            
+        </h4>
+
+        
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <script type="text/javascript" src="https://unpkg.com/mermaid@7.1.0/dist/mermaid.min.js"></script><p>This API allows us to see all the Chazki movements and the delivery state.</p>
+<p>Data must be sent using GET protocol.</p>
+<p>URL: https://us-central1-chazki-link-dev.cloudfunctions.net/fnTrackOrderChazkiPosition</p>
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-params">
+        <h5>Parameters:</h5>
+        
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>code</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Delivery track code.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>enterpriseKey</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Client unique authorization code.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+        <h5>Examples</h5>
+        
+        <p class="code-caption">Data sent in cURL format</p>
+    
+    <pre class="prettyprint"><code>  curl --request GET 'https://us-central1-chazki-link-dev.cloudfunctions.net/fnTrackOrderChazkiPosition?code=XXXXXXXXX&amp;enterpriseKey=YYYYYYYYYYYYYYY'</code></pre>
+
+        <p class="code-caption">Query response</p>
+    
+    <pre class="prettyprint"><code>  {
+    "response": 1,
+    "position": {
+      "latitude": -12.046502,
+      "longitude": -77.042716
+    },
+    "status": "ASSIGNED",
+    "timestamp": "2020-04-30T00:00:00.000Z",
+    "rd": "Nombre repartidor"
+  }</code></pre>
+
+        <p class="code-caption">Query response with errors</p>
+    
+    <pre class="prettyprint"><code>  {
+    "response": 0,
+    "descriptionResponse": "El trackcode no existe o el enterpriseKey no es correcto",
+    "message": ""
+  }</code></pre>
+
+    
+
+</dd>
+
+            
+                
+
+<dt>
+    
+        <h4 class="name" id="~fnOrderHistorialPublic">
+            
+                fnOrderHistorialPublic<span class="signature">(code, enterpriseKey)</span><span class="type-signature"></span>
+                
+            
+        </h4>
+
+        
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <script type="text/javascript" src="https://unpkg.com/mermaid@7.1.0/dist/mermaid.min.js"></script><p>This API allows us to see all the states the delivery passed group by services.The services group reference the number of attempts made to deliver the delivery.</p>
+<p>Los datos deben de ser enviados en el protocolo GET.</p>
+<p>URL: https://us-central1-chazki-link-dev.cloudfunctions.net/fnOrderHistorialPublic</p>
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-params">
+        <h5>Parameters:</h5>
+        
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>code</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Delivery track code.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>enterpriseKey</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Client unique authorization code.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+        <h5>Examples</h5>
+        
+        <p class="code-caption">Data sent in cURL format</p>
+    
+    <pre class="prettyprint"><code>  curl --location --request GET 'https://us-central1-chazki-link-dev.cloudfunctions.net/fnOrderHistorialPublic?code=XXXXXXXXXXXXXXXX&amp;enterpriseKey=YYYYYYYYYYYYYYYYYYYYY'</code></pre>
+
+        <p class="code-caption">Query response</p>
+    
+    <pre class="prettyprint"><code>   {
+     "response": 1,
+     "descriptionResponse": "SUCCESS",
+     "message": "",
+     "Service": [
+       [
+         {
+           "status": "NEW",
+           "date": "2020-09-28T15:49:43.181Z",
+           "reason": ""
+         },
+         {
+           "status": "ASSIGNED",
+           "date": "2020-09-28T22:08:48.193Z",
+           "reason": ""
+         }
+       ]
+     ]
+   }</code></pre>
+
+        <p class="code-caption">Query response with errors</p>
+    
+    <pre class="prettyprint"><code>   {
+     "response": 0,
+     "descriptionResponse": "El trackcode no existe o el enterpriseKey no es correcto",
+     "message": ""
+   }</code></pre>
+
+    
+
+</dd>
+
+            
+                
+
+<dt>
+    
+        <h4 class="name" id="~fnOrderHistorialPrivate">
+            
+                fnOrderHistorialPrivate<span class="signature">(code, enterpriseKey)</span><span class="type-signature"></span>
+                
+            
+        </h4>
+
+        
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <script type="text/javascript" src="https://unpkg.com/mermaid@7.1.0/dist/mermaid.min.js"></script><p>This API allows us to see all the states the delivery passed through.The number of the attempt made to deliver the delivery is shown in each change of status.</p>
+<p>Data must be sent using GET protocol.</p>
+<p>URL: https://us-central1-chazki-link-dev.cloudfunctions.net/fnOrderHistorialPrivate</p>
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-params">
+        <h5>Parameters:</h5>
+        
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>code</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Delivery track code.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>enterpriseKey</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Client unique authorization code.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+        <h5>Examples</h5>
+        
+        <p class="code-caption">Data sent in cURL format</p>
+    
+    <pre class="prettyprint"><code>  curl --request GET 'https://us-central1-chazki-link-dev.cloudfunctions.net/fnOrderHistorialPrivate?code=XXXXXXXXXXXXXXXX&amp;enterpriseKey=YYYYYYYYYYYYYYYYYYYYY'</code></pre>
+
+        <p class="code-caption">Query response</p>
+    
+    <pre class="prettyprint"><code>   {
+     "response": 1,
+     "descriptionResponse": "SUCCESS",
+     "message": "",
+     "Service": [
+       [
+         {
+           "status": "PLANNING",
+           "date": "2020-09-28T16:01:19.587Z",
+           "reason": ""
+         },
+         {
+           "status": "PLANNING2",
+           "date": "2020-09-28T16:02:18.860Z",
+           "reason": ""
+         },
+         {
+           "status": "PLANNED",
+           "date": "2020-09-28T16:02:20.784Z",
+           "reason": ""
+         },
+         {
+           "status": "DELIVERED",
+           "date": "2020-09-28T17:04:59.480Z",
+           "reason": ""
+         }
+       ],
+       [
+         {
+           "status": "PLANNING2",
+           "date": "2020-09-28T17:08:20.351Z",
+           "reason": ""
+         },
+         {
+           "status": "PLANNED",
+           "date": "2020-09-28T17:08:23.551Z",
+           "reason": ""
+         },
+         {
+           "status": "PLANNING",
+           "date": "2020-09-28T17:07:20.409Z",
+           "reason": ""
+         }
+       ]
+     ]
+   }</code></pre>
+
+        <p class="code-caption">Query response with errors</p>
+    
+    <pre class="prettyprint"><code>   {
+     "response": 0,
+     "descriptionResponse": "El trackcode no existe o el enterpriseKey no es correcto",
+     "message": ""
+   }</code></pre>
+
+    
+
+</dd>
+
+            
+                
+
+<dt>
+    
+        <h4 class="name" id="~fnOrderImages">
+            
+                fnOrderImages<span class="signature">(code, enterpriseKey)</span><span class="type-signature"></span>
+                
+            
+        </h4>
+
+        
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <script type="text/javascript" src="https://unpkg.com/mermaid@7.1.0/dist/mermaid.min.js"></script><p>This API allow us to see the pictures taken by the chazki at the delivery momment.</p>
+<p>Data must be sent using GET protocol.</p>
+<p>URL: https://us-central1-chazki-link-dev.cloudfunctions.net/fnOrderImages</p>
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-params">
+        <h5>Parameters:</h5>
+        
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>code</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Delivery track code.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>enterpriseKey</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Client unique authorization code.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+        <h5>Examples</h5>
+        
+        <p class="code-caption">Data sent in cURL format</p>
+    
+    <pre class="prettyprint"><code>  curl --request GET 'https://us-central1-chazki-link-dev.cloudfunctions.net/fnOrderImages?code=XXXXXXXXXXXXXXXX&amp;enterpriseKey=YYYYYYYYYYYYYYYYYYYYY'</code></pre>
+
+        <p class="code-caption">Query response</p>
+    
+    <pre class="prettyprint"><code>  {
+    "response": 1,
+    "deliveryResponse": "SUCCESS",
+    "orderImages": [
+      "image:content",
+      "iVBORw0KGgoAAAANSUhEUgAAAl8AAAQ4CAIAAAC4"
+    ]
+  }</code></pre>
+
+        <p class="code-caption">Query response with errors</p>
+    
+    <pre class="prettyprint"><code>  {
+    "response": 0,
+    "deliveryResponse": "No se encuentra el trackCode o el codigo de empresa"
+  }</code></pre>
+
+    
+
+</dd>
+
+            </dl>
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+</div>
+
+<footer>
+    <div class="footer-text"> </div>
+</footer>
+<script>prettyPrint();</script>
+<script src="scripts/jquery.min.js"></script>
+<script src="scripts/tui-doc.js"></script>
+<script src="scripts/linenumber.js"></script>
+
+    <script>
+        var id = 'module:WebServices_sub'.replace(/"/g, '_');
+        var selectedApi = document.getElementById(id); // do not use jquery selector
+        var $selectedApi = $(selectedApi);
+
+        $selectedApi.removeClass('hidden');
+        $selectedApi.parent().find('.glyphicon').removeClass('glyphicon-plus').addClass('glyphicon-minus');
+        showLnbApi();
+    </script>
+
+</body>
+</html>
