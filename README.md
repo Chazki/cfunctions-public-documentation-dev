@@ -1,7 +1,7 @@
 # API Reference
 
-Para poder realizar los pedidos de los servicios de Chazki se habilitaron endpoints para el registro del delivery y la consulta del estado de los pedidos.
+In order to place orders for Chazki's services, endpoints were enabled to record the delivery and check the orders status.
 
-Estos servicios se encuentran registrados en el dominio propiedad de chazki y se detallan en el apartado a continuación.
+These services are registered in the domain owned by chazki and are detailed in the section below.
 
-Encuentra más acerca de [Chazki aquí](https://chazki.com/#/). Vea también nuestros [Términos y condiciones](https://chazki.com/tyc.html).
+Find out more about [Chazki here](https://chazki.com/#/). See also our [Terms and Conditions](https://chazki.com/tyc.html).
