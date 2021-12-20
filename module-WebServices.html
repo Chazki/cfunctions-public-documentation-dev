@@ -333,7 +333,7 @@
 
             
 
-            <td class="description last"><p>Order payment method, It can take the next values PAID, COD, CCOD.</p></td>
+            <td class="description last"><p>Order payment method, It can take the next values COD, PAGADO, CCOD, PAY.</p></td>
         </tr>
 
     
@@ -364,7 +364,7 @@
 
             
 
-            <td class="description last"><p>Payment document, It can take the next values INVOICE, TICKET and GUIDE.</p></td>
+            <td class="description last"><p>Payment document, It can take the next values BOLETA, GUIA and FACTURA.</p></td>
         </tr>
 
     
@@ -616,7 +616,7 @@
 
             
 
-            <td class="description last"><p>It can take the next values ​​&quot;YES&quot; or &quot;NO&quot;</p></td>
+            <td class="description last"><p>It can take the next values 'YES' or 'NO'</p></td>
         </tr>
 
     
@@ -1454,7 +1454,7 @@
 
             
 
-            <td class="description last"><p>Coordinates array of picking address. Must have at least two elements: latitude and longitude.</p></td>
+            <td class="description last"><p>Coordinates array of picking address. Must have at least two elements: longitud and latitud.</p></td>
         </tr>
 
     
@@ -1487,7 +1487,364 @@
 
             
 
-            <td class="description last"><p>Coordinates array of delivery address. Must have at least two elements: latitude and longitude.</p></td>
+            <td class="description last"><p>Coordinates array of delivery address. Must have at least two elements: longitud and latitud.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>packages</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;Object></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>Order's packages list.</p>
+                <h6>Properties</h6>
+                
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>ClientPackageID</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>Package code.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>envelope</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>Package envelop type.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>weight</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Float</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>Package weight.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>weightUnit</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>Weight unit.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>size</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Int</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>Package size.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>quantity</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Int</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>Number of packages.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>name</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>Package description.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>currency</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>Currency type.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>unitaryProductPrice</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Float</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>Unitary package price.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
         </tr>
 
     
@@ -1638,6 +1995,19 @@
        "dropPoint": [
           -99.184241,
           19.529196
+       ],
+       "packages": [
+         {
+           "ClientPackageID": "68473029",
+           "envelope": "Caja",
+           "weight": 10.0,
+           "weightUnit": "kg",
+           "size": "M",
+           "quantity": 1,
+           "name": "HELADO OREO MICHA",
+           "currency": "MXN",
+           "unitaryProductPrice": 38.5,
+         }
        ]
      }
    ]
