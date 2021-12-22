@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Module: Global | Api Chazki Develop</title>
+    <title>Module: PDFAtariServices | Api Chazki Develop</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -46,7 +46,7 @@
 
 <header>
     
-        <h2>Global</h2>
+        <h2>PDFAtariServices</h2>
         
             
         
@@ -58,7 +58,7 @@
         <div class="container-overview">
         
             
-                <div class="description"><script type="text/javascript" src="https://unpkg.com/mermaid@7.1.0/dist/mermaid.min.js"></script><p>Global variables list.</p></div>
+                <div class="description"><script type="text/javascript" src="https://unpkg.com/mermaid@7.1.0/dist/mermaid.min.js"></script><p>PDF creator endpoints.</p></div>
             
 
             
@@ -159,9 +159,9 @@
 
 <dt>
     
-        <h4 class="name" id="~OrdersStatus">
+        <h4 class="name" id="~createAtariPDFFromCSV">
             
-                Orders Status<span class="signature">(NEW, PICKUP, RETURN, REPROGRAMMING, GOTO_PICK, ARRIVED_PICK, PICKING, GOTO_DELIVER, ARRIVED_DELIVER, CANCELED, FAILED_DROP, FAILED_PICK, DELIVERED, RETURNED)</span><span class="type-signature"></span>
+                createAtariPDFFromCSV<span class="signature">(filename, filenameUrl)</span><span class="type-signature"> &rarr; {Response}</span>
                 
             
         </h4>
@@ -173,7 +173,9 @@
 
     
     <div class="description">
-        <script type="text/javascript" src="https://unpkg.com/mermaid@7.1.0/dist/mermaid.min.js"></script><p>Order status list</p>
+        <script type="text/javascript" src="https://unpkg.com/mermaid@7.1.0/dist/mermaid.min.js"></script><p>This endpoint allows to create PDF From CSV file</p>
+<p>The file to be generated is in PDF extension.</p>
+<p>URL: https://us-central1-chazki-link-dev.cloudfunctions.net/createPDFFromCSVAtari</p>
     </div>
     
 
@@ -209,13 +211,13 @@
 
         <tr>
             
-                <td class="name"><code>NEW</code></td>
+                <td class="name"><code>filename</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">Initial</span>
+<span class="param-type">String</span>
 
 
             
@@ -225,20 +227,20 @@
 
             
 
-            <td class="description last"><p>New order.</p></td>
+            <td class="description last"><p>It's the name that was saved into the Firebase Storage</p></td>
         </tr>
 
     
 
         <tr>
             
-                <td class="name"><code>PICKUP</code></td>
+                <td class="name"><code>filenameUrl</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">Initial</span>
+<span class="param-type">String</span>
 
 
             
@@ -248,283 +250,7 @@
 
             
 
-            <td class="description last"><p>Recollection or crossdocking order.</p></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>RETURN</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Initial</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>Order returned.</p></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>REPROGRAMMING</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Initial</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>Reprogramming order.</p></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>GOTO_PICK</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Inprogress</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>Going to the order collection point</p></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>ARRIVED_PICK</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Inprogress</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>Arrival at the collection point</p></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>PICKING</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Inprogress</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>Order collected</p></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>GOTO_DELIVER</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Inprogress</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>Going to the order delivery point</p></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>ARRIVED_DELIVER</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Inprogress</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>Arrival at the delivery point</p></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>CANCELED</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Terminal</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>Order canceled.</p></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>FAILED_DROP</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Terminal</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>Order delivery failed.</p></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>FAILED_PICK</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Terminal</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>Order recollection failed.</p></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>DELIVERED</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Terminal</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>Order delivered.</p></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>RETURNED</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Terminal</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>Order returned to the customer..</p></td>
+            <td class="description last"><p>Position on the storage</p></td>
         </tr>
 
     
@@ -543,95 +269,44 @@
     
 
     
-
+    <h5>Throws:</h5>
     
-
-    
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-    
-
-</dd>
-
             
-                
 
-<dt>
+    <div class="param-desc">
     
-        <h4 class="name" id="~WebHooksDocumentation">
-            
-                WebHooks Documentation<span class="signature">()</span><span class="type-signature"></span>
-                
-            
-        </h4>
+        <p>If the filename does not exist in storage</p>
+    
+    </div>
+
 
         
-    
-</dt>
-<dd>
 
     
-    <div class="description">
-        <script type="text/javascript" src="https://unpkg.com/mermaid@7.1.0/dist/mermaid.min.js"></script><p>In this URL you have the documentation with the requirements that we need to notify you the status changes</p>
+    <div class="container-returns">
+        <h5>Returns:</h5>
+        
+                
+
+
+
+<span class="param-type">Response</span>
+
+
+
+
+
+- <p>Object with the PDF URL address.</p>
+
+
+
+
+            
     </div>
     
 
     
 
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
 
 <dl class="details">
 
@@ -661,13 +336,6 @@
 
     
 
-    
-    <dt class="tag-see">See:</dt>
-    <dd class="tag-see">
-        <ul>
-            <li><a href="https://docs.google.com/document/d/1GiIK7iLZTjPlwtg2QOiBM_U0A18kRaShgyhLnR08K9w/edit?usp=sharing">WebHook documentation</a></li>
-        </ul>
-    </dd>
     
 
     
@@ -702,7 +370,7 @@
 <script src="scripts/linenumber.js"></script>
 
     <script>
-        var id = 'module:Global_sub'.replace(/"/g, '_');
+        var id = 'module:PDFAtariServices_sub'.replace(/"/g, '_');
         var selectedApi = document.getElementById(id); // do not use jquery selector
         var $selectedApi = $(selectedApi);
 
