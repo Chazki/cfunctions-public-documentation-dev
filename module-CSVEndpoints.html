@@ -343,6 +343,26 @@
 
 
     
+        <h5>Examples</h5>
+        
+        <p class="code-caption">Parameters sent inside the request body in JSON format.</p>
+    
+    <pre class="prettyprint"><code>{
+ "enterpriseID": 2763,
+ "filename": "csv/2021-06-02T14-24-33-038Z.csv",
+ "filenameUrl": "https://firebasestorage.googleapis.com/v0/b/chazki-link-dev.appspot.com/o/csv%2F2021-06-02T14-24-33-038Z.csv",
+ "userID": "6dc84cb7-305c-48a2-9076-6e3deb3d2c44"
+}</code></pre>
+
+        <p class="code-caption">Response</p>
+    
+    <pre class="prettyprint"><code> {
+     "success": true,
+     "validatedOrderIDs": ["","","",""],
+     "noFailedOrders": 0
+ }</code></pre>
+
+    
 
 </dd>
 
@@ -556,6 +576,24 @@
     
 </dl>
 
+
+    
+        <h5>Examples</h5>
+        
+        <p class="code-caption">Parameters sent inside the request body in JSON format.</p>
+    
+    <pre class="prettyprint"><code>{
+ "enterpriseID": 2763,
+ "filename": "csv/2021-06-02T14-24-33-038Z.csv",
+ "filenameUrl": "https://firebasestorage.googleapis.com/v0/b/chazki-link-dev.appspot.com/o/csv%2F2021-06-02T14-24-33-038Z.csv",
+ "originalOrderID": "42903"
+}</code></pre>
+
+        <p class="code-caption">Response</p>
+    
+    <pre class="prettyprint"><code> {
+     "success": true
+ }</code></pre>
 
     
 
@@ -3308,6 +3346,25 @@
     
 </dl>
 
+
+    
+        <h5>Examples</h5>
+        
+        <p class="code-caption">Parameters sent inside the request body in JSON format.</p>
+    
+    <pre class="prettyprint"><code>{
+ "filename": "csv/2021-11-24T18-35-32-846Zreturn_orders_falabella.csv",
+ "filenameUrl" : "csv/2021-11-24T18-35-32-846Zreturn_orders_falabella.csv"
+}</code></pre>
+
+        <p class="code-caption">Response</p>
+    
+    <pre class="prettyprint"><code> {
+     "success": true,
+     "errors": ["","",""],
+     "validatedOrderTrackCodes": 0,
+     "ordersUpdated": 1
+ }</code></pre>
 
     
 
