@@ -1843,20 +1843,7 @@
     
     </tbody>
 </table>
-
-            </td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-            </td>
-        </tr>
-
-    
-    </tbody>
-</table>
+        
 
     </div>
     
@@ -4212,6 +4199,87 @@
 
 
     
+<<<<<<< Updated upstream
+=======
+        <h5>Examples</h5>
+        
+        <p class="code-caption">Parameters sent inside the request body in JSON format.</p>
+    
+    <pre class="prettyprint"><code> {
+   "enterpriseKey": "XXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+   "orders": [
+     {
+       "trackCode": "ABCDEFI",
+       "paymentMethodID": "PAGADO",
+       "paymentProofID": "BOLETA",
+       "serviceID": "REGULAR",
+       "packageEnvelope": "Caja",
+       "packageWeight": 1,
+       "packageSizeID": "XL",
+       "packageQuantity": 1,
+       "productDescription": "xxxxxxxxxxx",
+       "productPrice": 0,
+       "reverseLogistic": "NO",
+       "crossdocking": "NO",
+       "pickUpBranchID": "",
+       "pickUpAddress": "xxxxxxxxxxxxxxx",
+       "pickUpPostalCode": "000000",
+       "pickUpAddressReference": "-",
+       "pickUpPrimaryReference": "Distrito",
+       "pickUpSecondaryReference": "Departamento",
+       "pickUpNotes": "",
+       "pickUpContactName": "xxxxx yyyyy",
+       "pickUpContactPhone": "12345678",
+       "pickUpContactDocumentTypeID": "RUC",
+       "pickUpContactDocumentNumber": "12345678",
+       "pickUpContactEmail": "xxxxxx@yyyyy.zzz",
+       "dropBranchID": "",
+       "dropAddress": "Direccion",
+       "dropPostalCode": "000000",
+       "dropAddressReference": "Referencia",
+       "dropPrimaryReference": "Distrito",
+       "dropSecondaryReference": "Departamento",
+       "dropNotes": "Notas",
+       "dropContactName": "CONTACTO",
+       "dropContactPhone": "12345678 - 12345678",
+       "dropContactDocumentTypeID": "DNI",
+       "dropContactDocumentNumber": "12345678",
+       "dropContactEmail": "xxxxxx@yyyyy.zzz",
+       "pickUpPoint": [
+          -99.17644241,
+          19.509946148
+       ],
+       "dropPoint": [
+          -99.184241,
+          19.529196
+       ],
+       "packages": [
+         {
+           "ClientPackageID": "68473029",
+           "envelope": "Caja",
+           "weight": 10.0,
+           "weightUnit": "kg",
+           "size": "M",
+           "quantity": 1,
+           "name": "HELADO OREO MICHA",
+           "currency": "MXN",
+           "unitaryProductPrice": 38.5,
+         }
+       ]
+     }
+   ]
+ }</code></pre>
+
+        <p class="code-caption">Response</p>
+    
+    <pre class="prettyprint"><code> {
+     "success": true,
+     "ordersWithErrors": 0,
+     "ordersWithoutErrors": 1
+ }</code></pre>
+
+    
+>>>>>>> Stashed changes
 
 </dd>
 
